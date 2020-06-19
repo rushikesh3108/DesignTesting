@@ -6,294 +6,281 @@
     android:layout_height="match_parent"
     android:background="#EAEDFE"
     tools:context=".MainActivity">
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
 
-    >
-
-
-
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
 
-        <RelativeLayout
+        >
+
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp">
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:elevation="1dp"
-                android:src="@mipmap/login" />
-
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_marginTop="30dp">
 
-                <com.google.android.material.card.MaterialCardView
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:elevation="1dp"
+                    android:src="@mipmap/login" />
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="170dp"
-                    android:layout_marginBottom="20dp"
-                    app:cardCornerRadius="10dp"
-                    app:contentPaddingBottom="15dp"
-                    app:contentPaddingLeft="15dp"
-                    app:contentPaddingRight="15dp"
-                    app:contentPaddingTop="15dp">
+                    android:orientation="vertical">
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
+                    <com.google.android.material.card.MaterialCardView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="170dp"
+                        android:layout_marginBottom="20dp"
+                        app:cardCornerRadius="10dp"
+                        app:contentPaddingBottom="15dp"
+                        app:contentPaddingLeft="15dp"
+                        app:contentPaddingRight="15dp"
+                        app:contentPaddingTop="15dp">
 
-                        <TextView
-                            android:id="@+id/hello"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="36dp"
-                            android:text="Hello,"
-                            android:textColor="@color/helllo"
-                            android:textSize="30sp"
-                            android:textStyle="bold"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
-                            android:id="@+id/welcomeback"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:text="Welcome Back"
-                            android:textColor="@color/helllo"
-                            android:textSize="30sp"
-                            android:textStyle="bold"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/hello" />
-
-
-                        <TextView
-                            android:id="@+id/newuser"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="10dp"
-                            android:text="New user?"
-                            android:textColor="@color/grey"
-                            android:textSize="16sp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/welcomeback" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="10dp"
-                            android:text="@string/sign_up_here"
-                            android:textColor="@color/link"
-                            android:textSize="16sp"
-                            android:textStyle="bold"
-                            app:layout_constraintStart_toEndOf="@id/newuser"
-                            app:layout_constraintTop_toBottomOf="@id/welcomeback" />
-
-
-                        <EditText
-                            android:id="@+id/email"
+                        <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginEnd="20dp"
-                            android:background="@drawable/round_edittext"
-                            android:hint="Email or Username"
-                            android:paddingStart="20dp"
-                            android:paddingTop="20dp"
-                            android:paddingBottom="20dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/newuser" />
-
-                        <EditText
-                            android:id="@+id/pass"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginEnd="20dp"
-                            android:background="@drawable/round_edittext"
-                            android:hint="Password"
-                            android:paddingStart="20dp"
-                            android:paddingTop="20dp"
-                            android:paddingEnd="10dp"
-                            android:paddingBottom="20dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/email" />
-
-                        <CheckBox
-                            android:id="@+id/checkbox"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/pass" />
-
-                        <TextView
-                            android:id="@+id/remember"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="13dp"
-                            android:text="Remember me"
-                            android:textStyle="normal"
-                            app:layout_constraintStart_toEndOf="@id/checkbox"
-                            app:layout_constraintTop_toTopOf="@id/checkbox" />
-
-
-                        <TextView
-                            android:id="@+id/forgetpass"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="13dp"
-                            android:layout_marginEnd="20dp"
-                            android:text="@string/forget_password"
-                            android:textColor="@color/link"
-                            android:textStyle="normal"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="@id/checkbox" />
-
-
-                        <com.google.android.material.button.MaterialButton
-                            android:id="@+id/button"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginEnd="20dp"
-                            android:backgroundTint="@color/blue"
-                            android:paddingTop="16dp"
-                            android:onClick="next"
-                            android:paddingBottom="16dp"
-                            android:text="login Now"
-                            app:cornerRadius="20dp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.0"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/checkbox" />
-
-                        <RelativeLayout
-                            android:id="@+id/relative"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginEnd="20dp"
-                            android:orientation="horizontal"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/button">
-
-                            <View
-                                android:id="@+id/divider"
-                                android:layout_width="match_parent"
-                                android:layout_height="2dp"
-                                android:layout_centerVertical="true"
-                                android:layout_toLeftOf="@id/orlogin_with_text"
-                                android:background="?android:attr/listDivider" />
+                            android:layout_height="wrap_content">
 
                             <TextView
-                                android:id="@+id/orlogin_with_text"
+                                android:id="@+id/hello"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_centerInParent="true"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="10dp"
-                                android:text="or login with"
-                                android:textSize="12sp" />
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="36dp"
+                                android:text="Hello,"
+                                android:textColor="@color/helllo"
+                                android:textSize="30sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
 
-                            <View
-                                android:id="@+id/divider1"
+                            <TextView
+                                android:id="@+id/welcomeback"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:text="Welcome Back"
+                                android:textColor="@color/helllo"
+                                android:textSize="30sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/hello" />
+
+
+                            <TextView
+                                android:id="@+id/newuser"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:text="New user?"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/welcomeback" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/sign_up_here"
+                                android:textColor="@color/link"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toEndOf="@id/newuser"
+                                app:layout_constraintTop_toBottomOf="@id/welcomeback" />
+
+
+                            <EditText
+                                android:id="@+id/email"
                                 android:layout_width="match_parent"
-                                android:layout_height="2dp"
-                                android:layout_centerVertical="true"
-                                android:layout_toRightOf="@+id/orlogin_with_text"
-                                android:background="?android:attr/listDivider" />
-                        </RelativeLayout>
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/round_edittext"
+                                android:hint="Email or Username"
+                                android:paddingStart="20dp"
+                                android:paddingTop="20dp"
+                                android:paddingBottom="20dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/newuser" />
 
-                        <com.google.android.material.button.MaterialButton
-                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:drawableLeft="@drawable/ic_google"
-                            android:paddingTop="20dp"
-                            android:paddingBottom="20dp"
-                            android:paddingStart="30dp"
-                            android:paddingEnd="30dp"
-                            android:text="Google"
-                            android:id="@+id/google"
-                            app:strokeColor="@color/red"
-                            android:textColor="@color/red"
-                            app:cornerRadius="20dp"
-                            app:iconPadding="8dp"
-                            android:textStyle="bold"
-                            android:layout_marginStart="20dp"
-                            android:textAllCaps="false"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/relative" />
+                            <EditText
+                                android:id="@+id/pass"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/round_edittext"
+                                android:hint="Password"
+                                android:paddingStart="20dp"
+                                android:paddingTop="20dp"
+                                android:paddingEnd="10dp"
+                                android:paddingBottom="20dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/email" />
 
+                            <CheckBox
+                                android:id="@+id/checkbox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/pass" />
 
-                        <com.google.android.material.button.MaterialButton
-                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:drawableLeft="@drawable/ic_fbic"
-                            android:paddingTop="20dp"
-                            android:paddingBottom="20dp"
-                            android:paddingStart="30dp"
-                            android:paddingEnd="30dp"
-                             android:text="Facebook"
-                            app:strokeColor="@color/fb"
-                            android:textColor="@color/fb"
-                            app:cornerRadius="20dp"
-                            app:iconPadding="8dp"
-                            android:textStyle="bold"
-                            android:textAllCaps="false"
-                            android:layout_marginStart="16dp"
-                            app:layout_constraintStart_toEndOf="@id/google"
-                            app:layout_constraintTop_toBottomOf="@id/relative" />
-
-                        <!--
+                            <TextView
+                                android:id="@+id/remember"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="13dp"
+                                android:text="Remember me"
+                                android:textStyle="normal"
+                                app:layout_constraintStart_toEndOf="@id/checkbox"
+                                app:layout_constraintTop_toTopOf="@id/checkbox" />
 
 
-
-                          <TextView
-                              android:layout_width="wrap_content"
-                              android:layout_height="wrap_content"
-                              android:layout_gravity="center_horizontal"
-                              android:layout_marginTop="20dp"
-                              android:text="Dhaka,Bangladesh"
-                              android:textSize="18sp"
-                              android:textStyle="bold"
-
-                              />-->
-
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </com.google.android.material.card.MaterialCardView>
+                            <TextView
+                                android:id="@+id/forgetpass"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="13dp"
+                                android:layout_marginEnd="20dp"
+                                android:text="@string/forget_password"
+                                android:textColor="@color/link"
+                                android:textStyle="normal"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="@id/checkbox" />
 
 
-            </LinearLayout>
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/button"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:backgroundTint="@color/blue"
+                                android:onClick="next"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:text="login Now"
+                                app:cornerRadius="20dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/checkbox" />
+
+                            <RelativeLayout
+                                android:id="@+id/relative"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/button">
+
+                                <View
+                                    android:id="@+id/divider"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toLeftOf="@id/orlogin_with_text"
+                                    android:background="?android:attr/listDivider" />
+
+                                <TextView
+                                    android:id="@+id/orlogin_with_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="or login with"
+                                    android:textSize="12sp" />
+
+                                <View
+                                    android:id="@+id/divider1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toRightOf="@+id/orlogin_with_text"
+                                    android:background="?android:attr/listDivider" />
+                            </RelativeLayout>
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/google"
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="20dp"
+                                android:drawableLeft="@drawable/ic_google"
+                                android:paddingStart="20dp"
+                                android:paddingTop="20dp"
+                                android:paddingEnd="20dp"
+                                android:paddingBottom="20dp"
+                                android:text="Google"
+                                android:textAllCaps="false"
+                                android:textColor="@color/red"
+                                android:textStyle="bold"
+                                app:cornerRadius="20dp"
+                                app:iconPadding="8dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/relative"
+                                app:strokeColor="@color/red" />
 
 
-        </RelativeLayout>
-    </LinearLayout>
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginTop="20dp"
+                                android:drawableLeft="@drawable/ic_fbic"
+                                android:paddingStart="20dp"
+                                android:paddingTop="20dp"
+                                android:paddingEnd="20dp"
+                                android:paddingBottom="20dp"
+                                android:text="Facebook"
+                                android:textAllCaps="false"
+                                android:textColor="@color/fb"
+                                android:textStyle="bold"
+                                app:cornerRadius="20dp"
+                                app:iconPadding="8dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/relative"
 
-</RelativeLayout>
+
+                                app:strokeColor="@color/fb" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
 
 </ScrollView>
