@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#27253B"
+    tools:context=".Main2Activity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@color/back"
+            android:orientation="vertical"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_menu_black_24dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#ffffff"
+                android:drawableStart="@drawable/ic_search_black_24dp"
+                android:hint="search"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/c1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="20dp"
+            android:background="#ffffff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/ongoingevents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:drawableStart="@drawable/ic_barimg"
+                android:text="Ongoing Events"
+                android:textColor="#2D2B2C"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ongoingevents">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/mettingconf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Metting &amp; Conferencing"
+                        android:textColor="#2D2B2C"
+
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <ImageView
+                        android:id="@+id/locimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ic_place_black_24dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/mettingconf" />
+
+                    <TextView
+                        android:id="@+id/loc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="10dp"
+                        android:text="IIT University,Goa"
+                        android:textColor="#2D2B2C"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+
+                        app:layout_constraintStart_toEndOf="@id/locimg"
+                        app:layout_constraintTop_toBottomOf="@id/mettingconf"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+
+                        android:layout_marginTop="10dp"
+                        android:text="A Meet-up between college from all over \nindia for discussions"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/locimg"
+
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/markerimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="30dp"
+                        android:src="@drawable/ic_adjust_black_24dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/desc" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="30dp"
+                        android:text="March 7,2020"
+                        android:textColor="#43B3F5"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/markerimg"
+                        app:layout_constraintTop_toBottomOf="@id/desc" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- <View
+                 android:id="@+id/divider"
+                 android:layout_width="6dp"
+                 android:layout_height="20dp"
+                 android:layout_marginStart="30dp"
+                 android:layout_marginTop="20dp"
+
+                 android:background="?android:attr/listDivider"
+                  app:layout_constraintStart_toStartOf="parent"
+                 app:layout_constraintTop_toTopOf="parent" />
+ -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/mettingconf1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Metting &amp; Conferencing"
+                        android:textColor="#2D2B2C"
+
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <ImageView
+                        android:id="@+id/locimg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ic_place_black_24dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/mettingconf1" />
+
+                    <TextView
+                        android:id="@+id/loc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="10dp"
+                        android:text="IIT University,Goa"
+                        android:textColor="#2D2B2C"
+                        android:textSize="16sp"
+
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@id/locimg1"
+                        app:layout_constraintTop_toBottomOf="@id/mettingconf1"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/desc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+
+                        android:layout_marginTop="10dp"
+                        android:text="A Meet-up between college from all over \nindia for discussions"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/locimg1"
+
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/markerimg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="30dp"
+                        android:src="@drawable/ic_adjust_black_24dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/desc1" />
+
+                    <TextView
+                        android:id="@+id/time1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="30dp"
+                        android:text="March 7,2020"
+                        android:textColor="#43B3F5"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/markerimg1"
+                        app:layout_constraintTop_toBottomOf="@id/desc1" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="30dp"
+            android:background="#ffffff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/c1"
+
+            >
+
+            <TextView
+                android:id="@+id/history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:drawableStart="@drawable/ic_barimg"
+                android:text="Your History"
+                android:textColor="#2D2B2C"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="20dp"
+                android:text="Detailed View"
+                android:textColor="#2D2B2C"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/sportsevents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Sports Events"
+                android:textColor="#2D2B2C"
+                android:textStyle="bold"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/history"
+
+
+                />
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:layout_height="10dp"
+                android:id="@+id/progress0"
+                android:layout_width="match_parent"
+                app:rcProgress="80"
+                app:rcSecondaryProgress="30"
+                app:rcMax="100"
+                app:rcRadius="10dp"
+                 app:rcReverse="false"
+                app:rcProgressColor="@color/skyblue"
+                app:rcSecondaryProgressColor="@color/green"
+                app:rcBackgroundColor="#ffffff"
+                app:rcAnimationEnable="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sportsevents"
+                android:layout_marginTop="6dp"
+                  app:rcAnimationSpeedScale="3" />
+
+            <TextView
+                android:id="@+id/meetings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Meetings"
+                android:textColor="#2D2B2C"
+                android:textStyle="bold"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/progress0"
+
+
+                />
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:layout_height="10dp"
+                android:id="@+id/progress1"
+                android:layout_width="match_parent"
+                app:rcProgress="45"
+                app:rcSecondaryProgress="30"
+                app:rcMax="100"
+                app:rcRadius="10dp"
+                app:rcReverse="false"
+                app:rcProgressColor="@color/green"
+                 app:rcBackgroundColor="#ffffff"
+                app:rcAnimationEnable="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/meetings"
+                android:layout_marginTop="6dp"
+                app:rcAnimationSpeedScale="3" />
+
+
+            <TextView
+                android:id="@+id/conventions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Conventions"
+                android:textColor="#2D2B2C"
+                android:textStyle="bold"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/progress1"
+
+
+                />
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:layout_height="10dp"
+                android:id="@+id/progress2"
+                android:layout_width="match_parent"
+                app:rcProgress="25"
+                app:rcSecondaryProgress="30"
+                app:rcMax="100"
+                app:rcRadius="10dp"
+                app:rcReverse="false"
+                app:rcProgressColor="@color/pink"
+                 app:rcBackgroundColor="#ffffff"
+                app:rcAnimationEnable="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/conventions"
+                android:layout_marginTop="6dp"
+                app:rcAnimationSpeedScale="3" />
+
+
+            <TextView
+                android:id="@+id/MediaEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Media Events"
+                android:textColor="#2D2B2C"
+                android:textStyle="bold"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/progress2"
+
+
+                />
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:layout_height="10dp"
+                android:id="@+id/progress3"
+                android:layout_width="match_parent"
+                app:rcProgress="65"
+                app:rcSecondaryProgress="30"
+                app:rcMax="100"
+                app:rcRadius="10dp"
+                app:rcReverse="false"
+                app:rcProgressColor="@color/ye"
+                app:rcSecondaryProgressColor="@color/green"
+                app:rcBackgroundColor="#ffffff"
+                app:rcAnimationEnable="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintTop_toBottomOf="@id/MediaEvents"
+                android:layout_marginTop="6dp"
+                app:rcAnimationSpeedScale="3" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

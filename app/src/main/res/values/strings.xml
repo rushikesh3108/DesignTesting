@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TestingDesign</string>
+    <string name="sign_up_here"><u>Sign Up Here</u></string>
+    <string name="forget_password"><u>Forget Password</u></string>
+</resources>
